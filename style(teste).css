@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	overflow-y: hidden;
+	background-image: url("../Imagens/filmesBody.jpg");
+	background-size: 50% 100% ;
+
+}
+@font-face{
+	src: url("../fonts/BebasNeue-Regular.ttf");
+	font-family: BebasNeue;
+}
+section{
+	width: 65%;
+	height: 80%;
+	margin: 80px auto;
+	background-color: gray;
+	box-shadow: 5px 5px  25px 5px #C62A1A;
+}
+section>div{
+	height: 50%;
+}
+.informaçao{
+	width: 100%;
+	background-color: #5D6464;
+}
+.desc{
+	padding: 15px;
+	font-family: BebasNeue;
+	text-align: center;
+}
+.desc h3{
+	display: inline-block;
+	width: 50%;
+	font-size: 25px;
+	cursor: default;
+	background-color: #C62A1A;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+.desc h3:hover{
+	width: 100%;
+}
+.desc p{
+	margin-top: 20px;
+	text-align: justify;
+	cursor: default;
+
+}
+.sign{
+	float: left;
+	width: 50%;
+}
+.sign form{
+	text-align: center;
+}
+.sign h3{
+	font-family: BebasNeue;
+	font-size: 20px;
+	margin: 20px;
+	background-color: #C62A1A;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: default;
+}
+.sign input[type = e-mail]{
+	width: 70%;
+	height: 35px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin-top: 20px;
+}
+.sign input[type = submit]{
+	width: 40%;
+	height: 40px;
+	margin-top: 40px;
+	font-family: BebasNeue;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #C62A1A;
+	border-radius: 10px;
+	border: 2px solid black;
+	cursor: pointer;
+	transition: 2s;
+}
+.sign input[type = submit]:hover{
+	width: 65%;
+	height: 50px;
+	background-color: darkgreen;
+}
+.dados{
+	width: 50%;
+	background-image: url("../Imagens/3filmes.jpg");
+	background-size: 100% 100%;
+	float: right;
+}
+
+@media screen and (max-width: 950px){
+
+section{
+	margin: 20px auto;
+	height: 100%;
+}
+}
+
+@media screen and (max-width: 710px){
+	section{
+		width: 80%;
+	}
+	.sign input[type = e-mail]{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 580px){
+	section{
+		width: 95%;
+	}
+}
+@media screen and (max-height: 600px){
+	section{
+		width: 100%;	
+		overflow-y: auto;
+	}
+	section>div{
+		height: auto;
+	}
+	.sign{
+		width: 100%;
+	}
+	.dados{
+		width: 100%;
+	}
+	.sign input[type = e-mail]{
+	margin-top: 0;
+}
+.sign input[type = submit]{
+	margin-top: 20px;
+}
