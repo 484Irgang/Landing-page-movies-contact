@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
 }
 
 html, body{
@@ -9,7 +12,7 @@ html, body{
 	overflow-y: hidden;
 	background-image: url("../Imagens/filmesBody.jpg");
 	background-size: 50% 100% ;
-
+	background-color: #2b2d2d;
 }
 @font-face{
 	src: url("../fonts/BebasNeue-Regular.ttf");
@@ -61,7 +64,6 @@ section>div{
 	text-align: center;
 }
 .sign h3{
-	font-family: BebasNeue;
 	font-size: 20px;
 	margin: 20px;
 	background-color: #C62A1A;
@@ -97,7 +99,7 @@ section>div{
 }
 .dados{
 	width: 50%;
-	background-image: url("../Imagens/3filmes.jpg");
+	background-image: url("bg-filme.jpg");
 	background-size: 100% 100%;
 	float: right;
 }
